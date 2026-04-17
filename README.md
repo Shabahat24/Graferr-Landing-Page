@@ -53,3 +53,8 @@ data/
 
 ## Deployment
 This project can be deployed on Vercel or Netlify.
+
+
+## Screenshot Comparison
+
+![Comparison](./screenshot/comparison.png)
