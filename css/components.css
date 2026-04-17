@@ -1,0 +1,130 @@
+.btn,
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  padding: 15px 24px;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--gradient-primary);
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition), opacity var(--transition);
+  box-shadow: 0 18px 30px rgba(59, 130, 246, 0.2);
+}
+.btn:hover,
+.nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 34px rgba(59, 130, 246, 0.24);
+}
+.btn:active,
+.nav-cta:active { transform: translateY(0); }
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #eef2f7;
+  border-radius: 16px;
+}
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+  animation: shimmer 1.2s infinite;
+}
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+.carousel-shell {
+  position: relative;
+  overflow: hidden;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 300ms ease;
+  touch-action: pan-y;
+  will-change: transform;
+}
+.carousel-slide {
+  padding: 0 12px;
+  flex: 0 0 100%;
+}
+.product-card {
+  height: 100%;
+  display: grid;
+  gap: 22px;
+  padding: 22px;
+  border: 1px solid rgba(17, 24, 39, 0.04);
+}
+.product-card__image {
+  aspect-ratio: 16 / 11;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 22px;
+}
+.product-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  background: linear-gradient(180deg, rgba(59,130,246,0.12), rgba(249,115,22,0.12));
+}
+.product-card h3 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+.product-card p {
+  margin: 0;
+  line-height: 1.7;
+  color: var(--color-muted);
+}
+.carousel-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 28px;
+}
+.carousel-arrow {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--color-line);
+  background: #fff;
+  cursor: pointer;
+  transition: transform var(--transition), background var(--transition), border-color var(--transition);
+}
+.carousel-arrow:hover:not(:disabled) {
+  background: #f8fafc;
+  transform: translateY(-1px);
+}
+.carousel-arrow:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.error-box {
+  text-align: center;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: var(--shadow-card);
+}
+.error-box p {
+  color: var(--color-muted);
+  margin-bottom: 18px;
+}

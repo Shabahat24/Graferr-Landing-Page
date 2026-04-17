@@ -1,0 +1,62 @@
+{
+  "navigation": {
+    "logo": { "text": "Grafterr", "alt": "Grafterr logo" },
+    "links": [
+      { "label": "Products", "href": "#features-section" },
+      { "label": "Solutions", "href": "#features-section" }
+    ],
+    "cta": { "label": "Book a Demo", "href": "#hero-section" }
+  },
+  "hero": {
+    "eyebrow": "Restaurant growth platform",
+    "headlinePrefix": "The all-in-one",
+    "headlineGradient": "technology provider",
+    "headlineSuffix": "for modern restaurants",
+    "subheadline": "Launch faster, serve smarter, and manage every touchpoint with a platform built to help hospitality brands increase speed, efficiency, and revenue.",
+    "cta": { "label": "Get Started", "href": "#features-section" },
+    "decorativeShapes": {
+      "circle": { "show": true },
+      "rectangle": { "show": true }
+    },
+    "dashboardImage": {
+      "src": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Restaurant technology dashboard"
+    },
+    "badges": [
+      { "label": "+28% faster service" },
+      { "label": "Trusted by restaurant teams" }
+    ]
+  },
+  "featuresSection": {
+    "title": "Tools designed to",
+    "titleAccent": "grow your business",
+    "subtitle": "From front-of-house to back-of-house, Grafterr helps restaurants streamline operations and delight guests.",
+    "products": [
+      {
+        "title": "Point of Sale",
+        "description": "Take orders, manage payments, and track performance from a reliable POS system tailored for fast-moving restaurant teams.",
+        "icon": "🧾",
+        "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
+        "alt": "Point of sale interface"
+      },
+      {
+        "title": "Self-service",
+        "description": "Reduce queue times with intuitive self-service ordering that improves speed, accuracy, and customer satisfaction.",
+        "icon": "📱",
+        "image": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=80",
+        "alt": "Self service ordering display"
+      },
+      {
+        "title": "Kitchen Management",
+        "description": "Coordinate kitchen workflows in real time so staff can prioritize tickets, reduce delays, and improve fulfillment.",
+        "icon": "🍽️",
+        "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=80",
+        "alt": "Kitchen management screen"
+      }
+    ],
+    "carousel": {
+      "itemsPerView": { "mobile": 1, "tablet": 2, "desktop": 3 },
+      "showArrows": true
+    }
+  }
+}
